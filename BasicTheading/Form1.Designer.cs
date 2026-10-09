@@ -14,47 +14,43 @@
         #region Windows Form Designer generated code
         private void InitializeComponent()
         {
-            lblStatus = new Label();
-            btnRun = new Button();
-            SuspendLayout();
-            // 
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.btnRun = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            //
             // lblStatus
-            // 
-            lblStatus.AutoSize = true;
-            lblStatus.Font = new Font("Microsoft Sans Serif", 16F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblStatus.Location = new Point(65, 9);
-            lblStatus.Margin = new Padding(4, 0, 4, 0);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(234, 26);
-            lblStatus.TabIndex = 0;
-            lblStatus.Text = "-Before starting thread-";
-            lblStatus.Click += lblStatus_Click;
-            // 
+            //
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(50, 40);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(225, 26);
+            this.lblStatus.TabIndex = 0;
+            this.lblStatus.Text = "-Before starting thread-";
+            //
             // btnRun
-            // 
-            btnRun.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            btnRun.Location = new Point(130, 168);
-            btnRun.Margin = new Padding(4, 3, 4, 3);
-            btnRun.Name = "btnRun";
-            btnRun.Size = new Size(93, 40);
-            btnRun.TabIndex = 1;
-            btnRun.Text = "Run";
-            btnRun.UseVisualStyleBackColor = true;
-            btnRun.Click += btnRun_Click;
-            // 
+            //
+            this.btnRun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRun.Location = new System.Drawing.Point(120, 110);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(80, 35);
+            this.btnRun.TabIndex = 1;
+            this.btnRun.Text = "Run";
+            this.btnRun.UseVisualStyleBackColor = true;
+            this.btnRun.Click += new System.EventHandler(this.btnRun_Click);
+            //
             // FrmBasicThread
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(369, 220);
-            Controls.Add(btnRun);
-            Controls.Add(lblStatus);
-            Margin = new Padding(4, 3, 4, 3);
-            Name = "FrmBasicThread";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "BasicThread";
-            ResumeLayout(false);
-            PerformLayout();
+            //
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(334, 181);
+            this.Controls.Add(this.btnRun);
+            this.Controls.Add(this.lblStatus);
+            this.Name = "FrmBasicThread";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "BasicThread";
+            this.ResumeLayout(false);
+            this.PerformLayout();
         }
         #endregion
         private System.Windows.Forms.Label lblStatus;
