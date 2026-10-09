@@ -1,19 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System;
 
 namespace BasicThreading
 {
-    internal class MyThreadClass
+    internal static class Program
     {
-        public static void Thread1()
+        /// <summary>
+        ///  The main entry point for the application.
+        /// </summary>
+        [STAThread]
+        static void Main()
         {
-            for (int LoopCount = 0; LoopCount <= 5; LoopCount++)
-            {
-                Thread thread = Thread.CurrentThread;
-                Console.WriteLine("Name of Thread: " + thread.Name + " Process = " + LoopCount);
-                Thread.Sleep(1500);
-            }
+            // To customize application configuration such as set high DPI settings or default font,
+            // see https://aka.ms/applicationconfiguration.
+            ApplicationConfiguration.Initialize();
+            Application.Run(new FrmBasicThread());
         }
     }
 }
