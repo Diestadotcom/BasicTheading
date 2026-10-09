@@ -15,20 +15,15 @@ namespace BasicThreading
             Thread ThreadB = new Thread(new ThreadStart(MyThreadClass.Thread1));
             ThreadA.Name = "Thread A";
             ThreadB.Name = "Thread B";
-
+           
             ThreadA.Start();
             ThreadB.Start();
-
+         
             ThreadA.Join();
             ThreadB.Join();
             Console.WriteLine("-End of Thread-");
-
+    
             lblStatus.Text = "-End of Thread-";
-        }
-
-        private void lblStatus_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
